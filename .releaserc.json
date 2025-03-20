@@ -53,13 +53,6 @@
       }
     ],
     [
-      "semantic-release-vsce",
-      {
-        "packageVsix": true,
-        "publish": false
-      }
-    ],
-    [
       "@semantic-release/github",
       {
         "assets": [

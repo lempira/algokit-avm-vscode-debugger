@@ -59,8 +59,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish to Marketplace - Prod
-        if: ${{ github.ref_name == 'main' && inputs.production_release == 'true' }}
-        run: npx vsce publish --packagePath $(ls ./*.vsix | head -1)
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      # - name: Publish to Marketplace - Prod
+      #   if: ${{ github.ref_name == 'main' && inputs.production_release == 'true' }}
+      #   run: npx vsce publish --packagePath $(ls ./*.vsix | head -1)
+      #   env:
+      #     VSCE_PAT: ${{ secrets.VSCE_PAT }}
